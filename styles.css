@@ -9,3 +9,24 @@
   --orange: #fb8500;
   --light-sky-blue: #e0f2fe;
 }
+
+svg {
+  width: 24px;
+  height: 24px;
+}
+
+aside {
+  background-color: var(--cyan);
+  color: var(--white);
+  fill: var(--white);
+}
+
+main {
+  background-color: var(--light-gray);
+  color: var(--black);
+}
+
+.card {
+  background-color: var(--white);
+  border-left: 7px solid var(--orange);
+}
