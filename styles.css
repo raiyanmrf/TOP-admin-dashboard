@@ -70,6 +70,19 @@ header {
   padding: 15px;
 }
 
+header > * {
+  display: grid;
+  grid-template-columns: auto 250px;
+  align-items: center;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
 article {
   display: grid;
   grid-template-columns: repeat(2, 1fr) 250px;
