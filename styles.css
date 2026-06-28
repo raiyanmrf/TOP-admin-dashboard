@@ -158,3 +158,31 @@ article {
 p {
   color: var(--gray);
 }
+
+[class*="avatar"] {
+  border-radius: 100%;
+  padding: 4px;
+  display: grid;
+  place-items: center;
+  width: fit-content;
+}
+
+.horse {
+  background-color: var(--light-sky-blue);
+  fill: tomato;
+}
+
+.bat {
+  background-color: var(--yellow);
+  fill: var(--black);
+}
+
+.spider {
+  background-color: var(--black);
+  fill: var(--orange);
+}
+
+.penguin {
+  background-color: var(--pink);
+  fill: var(--gray);
+}
