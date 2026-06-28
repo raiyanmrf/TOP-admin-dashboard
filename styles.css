@@ -21,6 +21,7 @@ body {
   display: grid;
   grid-template-columns: 250px auto;
   max-width: 2000px;
+
   margin-inline: auto;
 }
 
@@ -55,8 +56,23 @@ main {
 
 header {
   background-color: var(--white);
+  padding: 15px;
 }
 
+article {
+  display: grid;
+  grid-template-columns: 1fr 250px;
+}
+
+.notices {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+[class*="__container"] {
+  background-color: var(--white);
+}
 .card {
   background-color: var(--white);
   border-left: 7px solid var(--orange);
