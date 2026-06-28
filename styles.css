@@ -31,11 +31,28 @@ aside {
   background-color: var(--cyan);
   color: var(--white);
   fill: var(--white);
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  align-content: start;
+  padding: 15px;
+}
+
+.menu li {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
 }
 
 main {
   background-color: var(--light-gray);
   color: var(--black);
+}
+
+header {
+  background-color: var(--white);
 }
 
 .card {
