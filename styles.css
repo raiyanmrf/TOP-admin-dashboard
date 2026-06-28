@@ -61,21 +61,46 @@ header {
 
 article {
   display: grid;
-  grid-template-columns: 1fr 250px;
+  grid-template-columns: repeat(2, 1fr) 250px;
+
+  grid-template-areas:
+    "projects projects announcements"
+    "projects projects trending";
+  gap: 15px;
+  padding: 10px;
 }
 
-.notices {
+.projects {
+  grid-area: projects;
+}
+.announcements {
+  grid-area: announcements;
+}
+.trending {
+  grid-area: trending;
+}
+
+.cards {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background-color: var(--white);
+  border-left: 7px solid var(--orange);
+  padding: 15px;
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
 }
 
 [class*="__container"] {
   background-color: var(--white);
-}
-.card {
-  background-color: var(--white);
-  border-left: 7px solid var(--orange);
+  padding: 10px;
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
 }
 
 p {
