@@ -72,7 +72,10 @@ aside {
   justify-content: flex-start;
   gap: 10px;
 }
-
+.menu li svg {
+  position: relative;
+  top: -2px;
+}
 main {
   background-color: var(--light-gray);
   color: var(--black);
