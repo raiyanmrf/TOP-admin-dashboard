@@ -191,7 +191,10 @@ article {
 .card__actions {
   margin-top: auto;
   width: 100%;
-  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
 }
 
 [class*="__title"] {
