@@ -164,7 +164,7 @@ article {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
 }
 
@@ -175,6 +175,7 @@ article {
   display: flex;
   flex-flow: column;
   gap: 10px;
+  border-radius: 10px;
 }
 
 [class*="__title"] {
@@ -186,6 +187,7 @@ article {
   display: flex;
   flex-flow: column;
   gap: 10px;
+  border-radius: 10px;
 }
 
 p {
@@ -218,4 +220,10 @@ p {
 .penguin {
   background-color: var(--pink);
   fill: var(--gray);
+}
+
+header,
+.card,
+[class*="container"] {
+  box-shadow: -2px 1px 10px rgb(0 0 0 / 21%);
 }
