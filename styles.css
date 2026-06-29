@@ -40,6 +40,12 @@ svg {
   width: 24px;
   height: 24px;
 }
+.logo svg {
+  width: 36px;
+  height: 36px;
+  position: relative;
+  top: 7px;
+}
 
 aside {
   background-color: var(--cyan);
@@ -75,6 +81,7 @@ header > * {
   grid-template-columns: auto 300px;
   align-items: center;
   padding-inline: 10px;
+  margin-bottom: 15px;
 }
 
 input,
@@ -110,6 +117,18 @@ input {
 }
 
 .lower-header .actions {
+  gap: 10px;
+}
+
+.lower-header svg {
+  width: 48px;
+  height: 48px;
+}
+
+.welcome-msg {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   gap: 10px;
 }
 
