@@ -37,9 +37,15 @@ body {
   margin-inline: auto;
 }
 
+@media (max-width: 2000px) {
+  body {
+    min-height: 100vh;
+  }
+}
+
 svg {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
 }
 .logo svg {
   width: 36px;
@@ -147,6 +153,7 @@ article {
 
   grid-template-areas:
     "projects projects announcements"
+    "projects projects ."
     "projects projects trending";
   gap: 15px;
   padding: 10px;
@@ -183,11 +190,28 @@ article {
 }
 [class*="__container"] {
   background-color: var(--white);
-  padding: 10px;
+
   display: flex;
   flex-flow: column;
   gap: 10px;
   border-radius: 10px;
+  font-size: 13px;
+}
+
+.announcements__container > * {
+  border-bottom: 1px solid var(--light-gray);
+  padding: 10px;
+}
+.trending__container {
+  padding: 10px;
+}
+
+.trending__container > * {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 5px;
 }
 
 p {
